@@ -6,6 +6,15 @@ import { parseStringPromise } from 'xml2js';
 
 class Parser implements IParser {
   public async execute(xmlsGroup: string[]): Promise<void> {
+    const isExistsOutFolder = fs.existsSync(path.resolve(__dirname, '../../../json'));
+    if (!isExistsOutFolder) {
+      fs.mkdir(path.resolve(__dirname, '../../../json'), (err) => {
+        if (err) {
+          throw new Error(err.message);
+        }
+      })
+    }
+
     for (const xml of xmlsGroup) {
       this.writeAsync(xml);
     }

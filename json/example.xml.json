@@ -1,0 +1,16 @@
+{
+    "book": {
+        "name": [
+            "A Song of Ice and Fire"
+        ],
+        "author": [
+            "George R. R. Martin"
+        ],
+        "language": [
+            "English"
+        ],
+        "genre": [
+            "Epic fantasy"
+        ]
+    }
+}
