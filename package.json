@@ -1,0 +1,28 @@
+{
+  "name": "xjs-parser",
+  "version": "1.0.0",
+  "description": "Extremely fast XML parser",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "parse": "cd ./lib && node index.js",
+    "start": "pnpm build && pnpm parse"
+  },
+  "keywords": [
+    "xml",
+    "json",
+    "js",
+    "nodejs"
+  ],
+  "author": "Vladislav Evtushenko <vladislovedeveloper@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/xml2js": "^0.4.11",
+    "@types/chalk": "^2.2.0",
+    "@types/node": "^18.0.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "xml2js": "^0.4.23"
+  }
+}
